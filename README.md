@@ -1,4 +1,4 @@
 # BBNP_LCA
 This repository contains the code and analysis for the research project titled "Advancing Landscape Characterization: A Comparative Study of Machine Learning and Manual Classification Methods with Insights from Bannau Brycheiniog National Park, Wales." The study explores the application of machine learning techniques in comparison to traditional manual classification methods for landscape characterization, with a focus on Bannau Brycheiniog National Park in Wales.
 
-# Note: Due to time constraints, the current code represents an early draft. Updates and improvements will be added as the project progresses.
+# Note: This is not the final version of the code. Due to time constraints, the current code represents an early draft. Updates and improvements will be added as the project progresses.
