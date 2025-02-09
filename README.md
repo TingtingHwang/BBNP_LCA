@@ -17,7 +17,7 @@ The dataset includes the following **7 geospatial layers** (processed into align
 - **Soilscape**: Sourced from [UK Soil Observatory](https://www.ukso.org/).  
 - **Vegetation**: Sourced from [Living Wales](https://livingwales.uk/).  
 
-**Manual.tif** (manually annotated ground truth data) was created by **Steven Warnock**. To access this file, please contact him for his permission.
+**Manual.tif** (manually annotated ground truth data) was created by **Steven Warnock**. To access this file, please contact him **swarnock@livland.eclipse.co.uk** for his permission.
 
 ---
 
