@@ -1,8 +1,8 @@
 # BBNP_LCA
 
-# Official Implementation of "Advancing Landscape Characterization: A Comparative Study of Machine Learning and Manual Classification Methods with Insights from Bannau Brycheiniog National Park, Wales."
+**Official Implementation of "Advancing Landscape Characterization: A Comparative Study of Machine Learning and Manual Classification Methods with Insights from Bannau Brycheiniog National Park, Wales."**
 
-This repository contains the official code for our paper, organized into seven components:  
+This repository contains the official codes for our paper, organized into seven components:  
 1. Data, 2. VIF & TOL Validation, 3. Clustering Methods, 4. CVI Plotting, 5. SHAP Analysis, 6. Mantel_MRM Analysis, and 7. Cross-Validation.  
 
 ---
