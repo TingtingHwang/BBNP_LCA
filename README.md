@@ -114,4 +114,4 @@ Run `compareLCA.m` in `7_CrossValidation/` to perform cross-validation between a
 
 ---
 
-For questions or data access requests, please contact **huangtt17@bjfu.edu.cn**.  
+For any questions, please contact **huangtt17@bjfu.edu.cn**.  
