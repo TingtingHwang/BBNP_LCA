@@ -6,8 +6,8 @@ This repository contains the official codes for our paper, organized into seven 
 
 
 ## Version Information  
-**Latest Release**: [v1.0](https://github.com/TingtingHwang/BBNP_LCA/releases/tag/v1.0)  
-**Review Response Version**: [v1.0-review-response](https://github.com/TingtingHwang/BBNP_LCA/commit/a1b2c3d)  
+**Latest Release**: [v1.0.0](https://github.com/TingtingHwang/BBNP_LCA/releases/tag/v1.0.0)  
+**Review Response Version**: [v1.0.0-review-response](https://github.com/TingtingHwang/BBNP_LCA/commit/a1b2c3d)  
 
 ---
 
