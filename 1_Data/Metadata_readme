@@ -1,0 +1,10 @@
+# Data source and description
+All data were projected into the same coordinate system (British_National_Grid), with uniform boundaries and then resampled using the nearest-neighbour method to obtain a uniform 30m resolution. The data processing was carried out in ArcGIS Desktop 10.8.2 and finally saved in GeoTIFF format.
+
+LCA relies on understanding and mapping the heterogeneity of landscape characters, both in terms of natural and human-made elements \citep{turner2015}. Seven Landscape Character Elements (LCEs) are used in this search, they are altitude, geology, soil, landform, vegetation, landcover, and historic landscape (Table \ref{tab:LVMA}). These datasets include 60 variables, as listed in \ref{appendixA}. Altitude is obtained from NASA EARTHDATA, with 12.5 m resolution \citep{ALOS2006}. The geology is Derived from 1:50,000 scale BGS Digital Data under Licence No. 2023/098 British Geological Survey © and Database Right UKRI \citep{BGS2023} . The soil is a 1:250,000 scale, obtained from National Soil Map of England and Wales - NATMAP (UK Soil Observatory, Cranfield). The landform and the historic landscape are obtained from the Natural Resources Wales. The vegetation and landcover \citep{Owers2021} are derived from the Living Wales, with 10 m resolution. All the data are projected into the same coordinate system, and then resampled using the Nearest Neighbour method to achieve a uniform 30 m pixel resolution.
+
+# Data ISO
+
+
+
+# Data
