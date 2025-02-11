@@ -1,5 +1,5 @@
 # Data description
-The dataset includes the following **7 geospatial layers** (processed into aligned GeoTIFF format (ISO 19115-33 compliant) formats):  
+The dataset includes the following **7 geospatial layers** (processed into aligned GeoTIFF format (ISO 19115-3 compliant) formats):  
 - **Altitude**: Sourced from [NASA EARTHDATA](https://earthdata.nasa.gov/).  
 - **Geology**: Sourced from [BGS Geology](https://www.bgs.ac.uk/).  
 - **Historic**: Sourced from [Landmap](https://www.landmap.ac.uk/).  
