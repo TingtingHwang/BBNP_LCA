@@ -12,7 +12,7 @@ This repository contains the official codes for our paper, organized into seven 
 ---
 
 ## 1. Data  
-The dataset includes the following **7 geospatial layers** (processed into aligned GeoTIFF format (ISO 19115-33 compliant)):  
+The dataset includes the following **7 geospatial layers** (processed into aligned GeoTIFF format (ISO 19115-3 compliant)):  
 - **Altitude**: Sourced from [NASA EARTHDATA](https://earthdata.nasa.gov/).  
 - **Geology**: Sourced from [BGS Geology](https://www.bgs.ac.uk/).  
 - **Historic**: Sourced from [Landmap](https://www.landmap.ac.uk/).  
