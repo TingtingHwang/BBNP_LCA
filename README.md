@@ -55,27 +55,27 @@ Run `processing.m` to compute the Variance Inflation Factor (VIF) and Tolerance 
 - Output dataset: `STSC/make_train_dataset/dataset_BBNP1x1_7Channels/`.  
 
 #### Step 2: Configure Environment  
-1. Create a Conda environment:  
+a. Create a Conda environment:  
    ```bash  
    conda create --name BBNP python=3.7 -y  
    conda activate BBNP  
    ```  
-2. Install PyTorch and TorchVision:  
+b. Install PyTorch and TorchVision:  
    ```bash  
    pip install torch===1.8.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html  
    pip install torchvision===0.9.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html  
    ```  
-3. Install MMCV:  
+c. Install MMCV:  
    ```bash  
    pip install -U openmim  
    mim install mmcv-full==1.2.4 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html  
    ```  
-4. Install dependencies in the project root:  
+d. Install dependencies in the project root:  
    ```bash  
    pip install mmsegmentation  
    pip install -v -e .  
    ```  
-5. Download the pretrained Swin Transformer model from [Google Drive](https://drive.google.com/file/d/1bUFuZ3tI6nUyVTMsDqZi85ltvf9REbla/view?usp=sharing) and place it in `models/`.  
+e. Download the pretrained Swin Transformer model from [Google Drive](https://drive.google.com/file/d/1bUFuZ3tI6nUyVTMsDqZi85ltvf9REbla/view?usp=sharing) and place it in `models/`.  
 
 #### Step 3: Training  
 Run the following command:  
@@ -108,9 +108,9 @@ Run `Fig_CVI_3models.m` in `Draw_CVI/` to generate line plots for DB and SC metr
 
 
 ## 6. SHAP Analysis  
-1. Preprocess data:  
+a. Preprocess data:  
    - Navigate to `6_SHAP/data/` and run `data_preprocessing.m`.  
-2. Run SHAP analysis:  
+b. Run SHAP analysis:  
    - Navigate to `6_SHAP/` and execute `python main_LCA.py`.  
 
 **Dependencies**:  
