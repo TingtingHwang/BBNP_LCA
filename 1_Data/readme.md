@@ -3,9 +3,9 @@ The dataset includes the following **7 geospatial layers** (processed into align
 - **Altitude**: Sourced from [NASA EARTHDATA](https://earthdata.nasa.gov/).  
 - **Geology**: Sourced from [BGS Geology](https://www.bgs.ac.uk/).  
 - **Historic**: Sourced from [Landmap](https://www.landmap.ac.uk/).  
-- **Landcover**: Sourced from [Living Wales](https://livingwales.uk/).  
+- **Habitat**: Sourced from [Living Wales](https://livingwales.uk/).  
 - **Landform**: Sourced from [Landmap](https://www.landmap.ac.uk/).  
-- **Soilscape**: Sourced from [UK Soil Observatory](https://www.ukso.org/).  
+- **SoilType**: Sourced from [UK Soil Observatory](https://www.ukso.org/).  
 - **Vegetation**: Sourced from [Living Wales](https://livingwales.uk/)
 - **Manual.tif**: manually annotated ground truth data, was created by **Steven Warnock**.
 
