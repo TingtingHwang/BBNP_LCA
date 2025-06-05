@@ -7,8 +7,8 @@ The dataset includes the following **7 geospatial layers** (processed into align
 - **Landform**: Sourced from [Landmap](https://www.landmap.ac.uk/).  
 - **SoilType**: Sourced from [UK Soil Observatory](https://www.ukso.org/).  
 - **Vegetation**: Sourced from [Living Wales](https://livingwales.uk/)
-- **Manual.tif**: manually annotated ground truth data, was created by **Steven Warnock**.
 
 
-All the data are projected into the same coordinate system (British_National_Grid) and then resampled using the Nearest Neighbour method to achieve a uniform 30 m pixel resolution  via ArcGIS.
+
+All the data are projected into the British National Grid (BNG) coordinate system (EPSG: 27700) and then resampled using the Nearest Neighbour method to achieve a uniform 30 m pixel resolution  via ArcGIS.
 
