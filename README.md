@@ -1,13 +1,17 @@
 # BBNP_LCA
 
 **Official Implementation of "Advancing Landscape Characterization: A Comparative Study of Machine Learning and Manual Classification Methods with Insights from Bannau Brycheiniog National Park, Wales."**
-This repository contains the official codes for our paper, organized into seven components:  
-1. Data, 2. VIF & TOL Validation, 3. Clustering Methods, 4. CVI Plotting, 5. SHAP Analysis, 6. Mantel_MRM Analysis, and 7. Cross-Validation.  
+This repository contains the official code for our paper, organized into seven components:  
+0. Raw data, 1. Data, 2. VIF & TOL Validation, 3. Clustering Methods, 4. CVI Plotting, 5. LCTs, 6. SHAP Analysis, and 7. Accuracy assessment.  
 
 
 ## Version Information  
 **Latest Release**: [v1.0.0](https://github.com/TingtingHwang/BBNP_LCA/releases/tag/v1.0.0)  
 **Review Response Version**: [v1.0.0-review-response](https://github.com/TingtingHwang/BBNP_LCA/commit/a1b2c3d)  
+
+---
+## 0. Raw data
+Raw data of 7 research data in our research. 
 
 ---
 
@@ -16,17 +20,15 @@ The dataset includes the following **7 geospatial layers** (processed into align
 - **Altitude**: Sourced from [NASA EARTHDATA](https://earthdata.nasa.gov/).  
 - **Geology**: Sourced from [BGS Geology](https://www.bgs.ac.uk/).  
 - **Historic**: Sourced from [Landmap](https://www.landmap.ac.uk/).  
-- **Landcover**: Sourced from [Living Wales](https://livingwales.uk/).  
+- **Habitat**: Sourced from [Living Wales](https://livingwales.uk/).  
 - **Landform**: Sourced from [Landmap](https://www.landmap.ac.uk/).  
-- **Soilscape**: Sourced from [UK Soil Observatory](https://www.ukso.org/).  
+- **SoilType**: Sourced from [UK Soil Observatory](https://www.ukso.org/).  
 - **Vegetation**: Sourced from [Living Wales](https://livingwales.uk/).  
-
-- **Manual.tif** (manually annotated ground reference map) was created by **Steven Warnock**.
 
 ---
 
 ## 2. VIF & TOL Validation  
-Run `processing.m` to compute Variance Inflation Factor (VIF) and Tolerance (TOL).  
+Run `processing.m` to compute the Variance Inflation Factor (VIF) and Tolerance (TOL).  
 - The `lib` folder contains preprocessing utilities for TIFF images (background removal, boundary alignment, and normalization).  
 
 ---
@@ -53,27 +55,27 @@ Run `processing.m` to compute Variance Inflation Factor (VIF) and Tolerance (TOL
 - Output dataset: `STSC/make_train_dataset/dataset_BBNP1x1_7Channels/`.  
 
 #### Step 2: Configure Environment  
-1. Create a Conda environment:  
+a. Create a Conda environment:  
    ```bash  
    conda create --name BBNP python=3.7 -y  
    conda activate BBNP  
    ```  
-2. Install PyTorch and TorchVision:  
+b. Install PyTorch and TorchVision:  
    ```bash  
    pip install torch===1.8.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html  
    pip install torchvision===0.9.1+cu111 -f https://download.pytorch.org/whl/torch_stable.html  
    ```  
-3. Install MMCV:  
+c. Install MMCV:  
    ```bash  
    pip install -U openmim  
    mim install mmcv-full==1.2.4 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html  
    ```  
-4. Install dependencies in the project root:  
+d. Install dependencies in the project root:  
    ```bash  
    pip install mmsegmentation  
    pip install -v -e .  
    ```  
-5. Download the pretrained Swin Transformer model from [Google Drive](https://drive.google.com/file/d/1bUFuZ3tI6nUyVTMsDqZi85ltvf9REbla/view?usp=sharing) and place it in `models/`.  
+e. Download the pretrained Swin Transformer model from [Google Drive](https://drive.google.com/file/d/1bUFuZ3tI6nUyVTMsDqZi85ltvf9REbla/view?usp=sharing) and place it in `models/`.  
 
 #### Step 3: Training  
 Run the following command:  
@@ -93,13 +95,23 @@ Our trained model [Google Drive](https://drive.google.com/file/d/1QYr5O35TniYFjx
 ## 4. CVI Plotting  
 Run `Fig_CVI_3models.m` in `Draw_CVI/` to generate line plots for DB and SC metrics using results from Step 3.  
 
+
 ---
 
-## 5. SHAP Analysis  
-1. Preprocess data:  
-   - Navigate to `5_SHAP/data/` and run `data_preprocessing.m`.  
-2. Run SHAP analysis:  
-   - Navigate to `5_SHAP/` and execute `python main_LCA.py`.  
+## 5. LCTs  
+- **Manual.tif**: manually annotated ground reference map was created by **Steven Warnock**.
+- **OPMC_LCT20.tif**: clustering result of OPMC.
+- **SOFM_LCT16.tif**: clustering result of SOFM.
+- **STSC_LCT20.tif**: clustering result of STSC.
+
+---
+
+
+## 6. SHAP Analysis  
+a. Preprocess data:  
+   - Navigate to `6_SHAP/data/` and run `data_preprocessing.m`.  
+b. Run SHAP analysis:  
+   - Navigate to `6_SHAP/` and execute `python main_LCA.py`.  
 
 **Dependencies**:  
 ```bash  
@@ -108,8 +120,8 @@ pip install lightgbm shap matplotlib scikit-learn xarray
 
 ---
 
-## 6. Cross-Validation  
-Run `compareLCA.m` in `7_CrossValidation/` to perform cross-validation between any two clustering results.  
+## 7. Accuracy Assessment  
+Run `compareLCA.m` in `7_AccuracyAsse/` to perform cross-validation between any two clustering results.  
 
 ---
 
