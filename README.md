@@ -108,12 +108,7 @@ pip install lightgbm shap matplotlib scikit-learn xarray
 
 ---
 
-## 6. Mantel & MRM Analysis  
-Navigate to `6_Mantel_MRM/` and run `Mantel_MRM.R` using R. Results will be saved in `Result/`.  
-
----
-
-## 7. Cross-Validation  
+## 6. Cross-Validation  
 Run `compareLCA.m` in `7_CrossValidation/` to perform cross-validation between any two clustering results.  
 
 ---
